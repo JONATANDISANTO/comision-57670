@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 90rem;
+    background-color: black;
+    font-family: "Poppins", sans-serif;
+    font-weight:400;
+
+    
+    }
+.img-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11.6875rem;
+    background-color: black;
+}    
+.img-inicio .img-header {
+    height: 7.875rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}    
+.nav .navbar {
+    display: flex;
+    background-color: #ffffff; 
+    height: 5.625rem;  
+    gap: 2.0625rem;
+}
+.nav .navbar li a { 
+    text-decoration: none;
+    
+
+}
+.navbar li a:hover {
+    color: rgb(0, 0, 0);
+    
+}    
+.h1-index {
+    display: flex;
+    width: 100%;
+    height: 11.875rem;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    border-top: 3.25rem solid #ffffff;
+    text-decoration: underline;
+
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 5rem;
+    text-decoration: underline;
+}
+
+.grid { 
+    display: grid;
+    width: 90rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.img-menu {
+    width: 100%;
+    min-height: 653px;
+    background-image: url('../img/Sin\ títSDulo-1.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+
+}
+
