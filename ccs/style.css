@@ -77,13 +77,55 @@ img {
     height: 100%;
     object-fit: contain;
 }
-.img-menu {
+.botones-contacto {
+    display: grid;
+    grid-template-columns: 30.9375rem 12.75rem 2.6875rem 12.75rem 30.9375rem;
+    grid-template-rows: 15.5rem 4.75rem 7.5rem 5.6875rem 7.375rem;
     width: 100%;
     min-height: 653px;
     background-image: url('../img/Sin\ títSDulo-1.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-
+}
+.botones-contacto .turno-whatsapp {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.botones-contacto .turno-whatsapp button {
+    width: 12.75rem;
+    height: 4.75rem;
+    background-color: black;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+.botones-contacto .lista-de-prescios {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.botones-contacto .lista-de-prescios button {
+    width: 12.75rem;
+    height: 4.75rem;
+    background-color: black;
+    font-size: 1.5rem;
+    color: #ffffff;  
+}
+.botones-contacto .lugar {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}    
+.botones-contacto .lugar button {
+    width: 23.9375rem;
+    height: 5.0625rem;
+    background-color: black;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-left: 2.125rem;
 }
 
