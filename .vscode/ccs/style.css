@@ -135,6 +135,7 @@ img {
     grid-template-rows: 7rem 9.78125rem 1rem 9.8125rem 1.78125rem;
     width: 83.6rem;
     margin-left: 6.25rem;
+    justify-content: center ;
     
 }
 
@@ -164,7 +165,7 @@ img {
     margin-left: 6.25rem;
     margin-left: auto;
     margin-right: 0; 
-    justify-content: end; 
+    justify-content: center; 
 }
 
 .h2-segundo {
@@ -225,7 +226,7 @@ footer {
     grid-row: 3/4;
 }
 .redes {
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
     color: rgba(165, 165, 165, 1);
 }
@@ -257,7 +258,7 @@ footer {
     padding: .625rem;
 }
 .redes ul li img {
-    width: 2.1875rem; 
+    width: 3rem; 
     height: auto; 
 }
 
@@ -711,7 +712,7 @@ button:hover {
     justify-content: center;
 }
 .cards {
-    width: 15.625rem;
+    width: 17rem;
     height: 25rem;
     background-color: rgb(255, 255, 255);
     border-radius: .3125rem;
