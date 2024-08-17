@@ -22,7 +22,7 @@ body {
     height: 6.25rem;
     background-color: black;
 }    
-.img-inicio .img-header {
+.img-header {
     height: 5rem;
     margin-right: 1.875rem;
     margin-left: 1.875rem
@@ -30,10 +30,10 @@ body {
 
 .nav {
     display: flex;
-    flex-direction: row;
     list-style: none;
     text-decoration: none;
     align-items: center;
+    justify-content: center;
 }
 
 .nav .navbar {
@@ -44,6 +44,7 @@ body {
     justify-content: center;
     border-top: solid white .0625rem;
     border-bottom: solid white .0625rem;
+    margin-bottom: 1.875rem;
 }
 .nav .navbar li a { 
     text-decoration: none;
@@ -58,12 +59,15 @@ body {
     transition: 1s;
 }  
 
-.h1-index {
-    display: flex;
-    height: 6.25rem;
-    justify-content: center;
-    align-items: center;
-}
+.h1-index 
+    {
+        display: flex;
+        width: 100%;
+        height: 12.5rem;
+        background-image: url(../img/fondo-historia.jpg);
+        justify-content: center;
+        align-items: center;
+    }
 
 .titulo {
     color: rgb(255, 255, 255);
@@ -78,16 +82,23 @@ img {
 }
 .botones-contacto {
     display: grid;
-    grid-template-columns:  30.925rem 12.7375rem 2.675rem 12.7375rem 30.925rem;
-    grid-template-rows: 3rem 6rem 6rem 6rem 6rem 3rem;
-    background-image: url('../img/Sin\ títSDulo-1.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat;
-    height: 30rem; 
+    grid-template-columns: repeat(12, 120px);
+    grid-template-rows: 3rem 6rem 6rem 3rem 6rem 3rem;
+    justify-items: center;
+    gap: .625rem;
+    
 }
+.botones-contacto img {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+    
 .botones-contacto .turno-whatsapp {
-    grid-column: 2/3;
+    grid-column: 5/6;
     grid-row: 2/3;
 }
 .botones-contacto .turno-whatsapp button {
@@ -98,7 +109,7 @@ img {
     color: #ffffff;  
 }
 .botones-contacto .lista-de-prescios {
-    grid-column: 4/5;
+    grid-column: 7/8;
     grid-row: 2/3;
 }
 .botones-contacto .lista-de-prescios button {
@@ -109,8 +120,10 @@ img {
     color: #ffffff;    
 }
 .botones-contacto .lugar {
-    grid-column: 2/5;
-    grid-row: 5/6;
+    display:flex;
+    grid-column: 5/8;
+    grid-row: 4/5;
+    
 }    
 .botones-contacto .lugar button {
     width: 23.9375rem;
@@ -119,7 +132,7 @@ img {
     font-family: "Poppins", sans-serif;
     font-size: 1.5rem;
     color: #ffffff;
-    margin-left: 2.125rem;
+    justify-content: center;
 }
 .botones-contacto button:hover {
     transform: scale(1.3); 
@@ -131,7 +144,7 @@ img {
     display: grid;
     grid-template-columns: 1.5625rem 17.6875rem 2.59375rem 10.03125rem 0.78125rem 10.78125rem 1.5625rem;
     grid-template-rows: 7rem 9.78125rem 1rem 9.8125rem 1.78125rem;
-    margin-left: 6.25rem;
+    justify-content: center;
     
 }
 
@@ -156,11 +169,8 @@ img {
 .h2-index2 {
     display: grid;
     grid-template-columns: 1.5625rem 17.6875rem 2.59375rem 10.03125rem 0.78125rem 10.78125rem 1.5625rem;
-    grid-template-rows: 7rem 9.78125rem 1rem 9.8125rem 1.78125rem;
-    margin-left: 6.25rem;
-    margin-left: auto;
-    margin-right: 0; 
-    justify-content: end; 
+    grid-template-rows: 7rem 9.78125rem 1rem 9.8125rem 1.78125rem; 
+    justify-content: center; 
 }
 
 .h2-segundo {
@@ -306,10 +316,11 @@ form button:hover {
 }
 .h1-tendencia {
     display: flex;
-    width: 100%;
-    height: 6.25rem;
-    justify-content: center;
-    align-items: center;
+        width: 100%;
+        height: 12.5rem;
+        background-image: url(../img/fondo-historia.jpg);
+        justify-content: center;
+        align-items: center;
 }
 
 .tendencias {
@@ -452,11 +463,10 @@ form button:hover {
 .h1-hist {
         display: flex;
         width: 100%;
-        height: 6.25rem;
-        background-color:  rgb(0, 0, 0);
+        height: 12.5rem;
+        background-image: url(../img/fondo-historia.jpg);
         justify-content: center;
         align-items: center;
-        border-bottom: solid white .0625rem;
     }
 .h1-historia {
     color: #ffffff;
@@ -597,9 +607,32 @@ form button:hover {
     font-size: 1.2rem;
     color: #fff; 
 }
-
 .cuatro-mujeres {
-    margin-bottom: 1.25rem;
+    display: flex;
+    justify-content: center;
+}
+.cuatro-mujeres img {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+    width: 50%;
+}
+.mujer-lavado {
+    display: flex;
+    justify-content: center;    
+}
+.mujer-lavado img {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+    width: 50%;
+}
+.img-servicios3 {
+    display: flex;
+    justify-content: center;    
+}
+.img-servicios3 img {
+    margin-bottom: 1.875rem;
+    margin-top: 1.875rem;
+    width: 50%;   
 }
 .subtitulo-servicios {
     display: flex;
@@ -613,14 +646,25 @@ form button:hover {
     align-items: center;
     justify-content: center;
 }
-.servicios {
+.h1-servicios {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 12.5rem;
+    background-image: url(../img/fondo-historia.jpg);
     justify-content: center;
-    color: #ffffff;
-    font-size: 5rem;
-    text-decoration: underline;
+    align-items: center;
 }
+.servicios {
+        color: rgb(255, 255, 255);
+        font-size: 2.8125rem;
+        text-decoration: underline;
+    }
+
+.p-posibilidad-de-pago {
+    color: #ffffff;
+}
+    
 .lista1 {
     width: 100%;
     display: flex;
@@ -745,7 +789,7 @@ form button:hover {
     border-radius: 4px;
 }
 
-button {
+.ordenar-btn .filtrar-btn {
     margin: 0rem 0rem .625rem .625rem; 
     padding: .3125rem;
     font-size: .75rem;
@@ -782,6 +826,7 @@ button:hover {
 }
 .fila-1 {
     display: flex;
+    flex-wrap: nowrap;
     margin-right: 1.875rem ;
     width: 100%;
     justify-content: center;
@@ -789,6 +834,7 @@ button:hover {
 }
 .fila-2 {
     display: flex;
+    flex-wrap: nowrap;
     margin-right: 1.875rem ;
     width: 100%;
     justify-content: center;
