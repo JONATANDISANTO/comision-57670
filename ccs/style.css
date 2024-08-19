@@ -25,7 +25,7 @@ body {
 .img-header {
     height: 5rem;
     margin-right: 1.875rem;
-    margin-left: 1.875rem
+    margin-left: 1.875rem;
 }
 
 .nav {
@@ -82,17 +82,18 @@ img {
 }
 .botones-contacto {
     display: grid;
-    grid-template-columns: repeat(12, 120px);
+    grid-template-columns: repeat (12, 120px);
     grid-template-rows: 3rem 6rem 6rem 3rem 6rem 3rem;
     justify-items: center;
     gap: .625rem;
     
 }
 .botones-contacto img {
-    grid-column: 1 / -1;
-    grid-row: 1 / -1;
+    grid-column: 1 / 12;
+    grid-row: 1 / -7;
     width: 100%;
-    height: 100%;
+    height: auto;
+    
     object-fit: cover;
     
 }
@@ -145,6 +146,7 @@ img {
     grid-template-columns: 1.5625rem 17.6875rem 2.59375rem 10.03125rem 0.78125rem 10.78125rem 1.5625rem;
     grid-template-rows: 7rem 9.78125rem 1rem 9.8125rem 1.78125rem;
     justify-content: center;
+    margin-top: 15.625rem;
     
 }
 
@@ -298,16 +300,16 @@ form input {
     border-radius: .625rem;
     font-size: 1.25rem;
 }
-form button {
-    background-color: #ffffff;
-    font-size: 1.125rem;
+footer form #boton-enviar {
+    background-color: #272727;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
-    width: 6.5625rem;
-    height: 2.6875rem;
+    width: 4.375rem;
+    height: 2.5rem;
     border-radius: .625rem;
-    color:#272727
+    color:#ffffff;
 } 
-form button:hover {
+form #boton-enviar:hover {
     background-color: #67c7ff;
     border-radius:  .625rem;
 }
@@ -607,13 +609,28 @@ form button:hover {
     font-size: 1.2rem;
     color: #fff; 
 }
+.parrafo-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.125rem;
+}
+.parrafo-description-h2 {
+    width: 50%;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.5; 
+    text-align: justify; 
+    justify-content: center;
+}
+
 .cuatro-mujeres {
     display: flex;
     justify-content: center;
 }
 .cuatro-mujeres img {
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
+    padding-top: 1.875rem;
     width: 50%;
 }
 .mujer-lavado {
@@ -621,8 +638,6 @@ form button:hover {
     justify-content: center;    
 }
 .mujer-lavado img {
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
     width: 50%;
 }
 .img-servicios3 {
@@ -630,8 +645,6 @@ form button:hover {
     justify-content: center;    
 }
 .img-servicios3 img {
-    margin-bottom: 1.875rem;
-    margin-top: 1.875rem;
     width: 50%;   
 }
 .subtitulo-servicios {
@@ -668,45 +681,39 @@ form button:hover {
 .lista1 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 1.25rem;
-    
+    gap: 1.875rem;
 }
 .lista2 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    
+    gap: 1.875rem
 }
 .lista3 {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1.875rem;   
 }
 .coloracion h2 {
+    justify-content: center;
     font-size: 3.125rem;
     color: #ffffff;
-    margin-left: 10rem;
-    margin-right: 3.125rem;
 }
 .belleza-capilar h2 {
     justify-content: center;
     font-size: 3.125rem;
     color: #ffffff;
-    margin-left: 10rem;
-    
 }
 
 .cortes-peinados h2 {
     justify-content: center;
     font-size: 3.125rem;
     color: #ffffff;
-    margin-left: 10rem;
-    
 }
 
 
@@ -721,9 +728,9 @@ form button:hover {
     justify-content: center;
     
 }
-.linea-coloracion {
+.linea-lista-color hr {
     width: 45rem;
-    
+    margin: 1.25rem;
 
 }
 
@@ -784,6 +791,28 @@ form button:hover {
     font-size: 2.8125rem;
     text-decoration: underline;
 }
+.productos-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    background-color: whitesmoke;
+    padding: 3.125rem;
+}
+
+.productos-info h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-decoration: underline;
+    color:rgb(36, 36, 36)
+}
+
+.productos-info p {
+    font-size: 1rem;
+    max-width: 600px;
+}
 
 .search-form {
     display: flex;
@@ -802,7 +831,17 @@ form button:hover {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-
+.shop .search-form .buscar {
+    background-color: #ffffff;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    width: 6.5625rem;
+    height: 2.6875rem;
+    border-radius: .625rem;
+    color:#272727;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
 .ordenar-btn, .filtrar-btn { 
     background-color: #ffffff;
     font-size: 1rem;
@@ -812,29 +851,52 @@ form button:hover {
     border-radius: .625rem;
     color:#272727;
     cursor: pointer;
+    border: 1px solid #ccc;
 }
 
 button:hover {
     background-color: #c0c0c0; 
 }
-.cards .card-info ul li{
-    text-decoration: none;
-    list-style: none;
+
+.cards h3 {
     font-size: .875rem;
-    margin-left: 1.25rem;
+    font-weight: 500;
+    color: #333333;
+    padding-bottom: 0.25rem; 
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
-.cards .card-info p {
-    font-size: 1rem;
-    color: rgb(0, 212, 0);
-    text-shadow: #6e6e6e;
-    margin-left: 1.25rem;
+.card-info ul li {
+    list-style: none;
+    font-size: 1.5rem;
+    color: #000000;
+    line-height: 1.1; 
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 0.1rem; 
 }
 
-.card-info h2 {
-    font-size: .9375rem;
-    margin-left: 1.25rem;
+.cards p {
+    font-size: 0.875rem;
+    color: #00ac00;
+    margin-top: 0rem; 
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    line-height: 1.1
 }
+.card-info button {
+    width: 5.3125rem;
+    height: 1.875rem;
+    margin: .625rem;
+    margin-left: 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.card-info button a:hover {
+    color:#6e6e6e;
+}
+
 .filas {
     background-color: whitesmoke;
 }
