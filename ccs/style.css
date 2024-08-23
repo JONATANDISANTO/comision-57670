@@ -632,6 +632,22 @@ form #boton-enviar:hover {
     font-size: 1.2rem;
     color: #fff; 
 }
+
+.h1-servicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12.5rem;
+    background-image: url(../img/fondo-historia.jpg);
+    justify-content: center;
+    align-items: center;
+}
+.servicios {
+    color: rgb(255, 255, 255);
+    font-size: 2.8125rem;
+    text-decoration: underline;
+}
+
 .parrafo-servicios {
     display: flex;
     justify-content: center;
@@ -641,7 +657,7 @@ form #boton-enviar:hover {
 .parrafo-description-h2 {
     width: 50%;
     font-size: 1rem;
-    color: #555;
+    color: #dfcdf3;
     margin-bottom: 1.5rem;
     line-height: 1.5; 
     text-align: justify; 
@@ -682,23 +698,11 @@ form #boton-enviar:hover {
     align-items: center;
     justify-content: center;
 }
-.h1-servicios {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 12.5rem;
-    background-image: url(../img/fondo-historia.jpg);
-    justify-content: center;
-    align-items: center;
-}
-.servicios {
-        color: rgb(255, 255, 255);
-        font-size: 2.8125rem;
-        text-decoration: underline;
-    }
 
 .p-posibilidad-de-pago {
-    color: #ffffff;
+    color: rgb(228, 217, 63);
+    font-style: italic;
+    background-color: #00000085;
 }
     
 .lista1 {
@@ -721,26 +725,24 @@ form #boton-enviar:hover {
     justify-content: center;
     align-items: center;
     gap: 1.875rem;   
-    margin-bottom: 3.125rem;
 }
 .coloracion h2 {
     justify-content: center;
     font-size: 3.125rem;
-    color: #ffffff;
+    color: rgb(230, 185, 70);
+
 }
 .belleza-capilar h2 {
     justify-content: center;
     font-size: 3.125rem;
-    color: #ffffff;
+    color: rgb(230, 185, 70);
 }
 
 .cortes-peinados h2 {
     justify-content: center;
     font-size: 3.125rem;
-    color: #ffffff;
+    color: rgb(230, 185, 70);
 }
-
-
 
 .productos-pelo {
     height: 100%;
@@ -1081,10 +1083,86 @@ button:hover {
         grid-template-rows: 6.58rem 14.98rem 4rem 14.98rem 4rem 14.98rem 4rem 14.98rem 4rem 14.98rem 6.58rem;
     }
     
+    .servicios {
+        font-size: 2.5rem;
+    }
+    .parrafo-servicios {
+        margin-top: 2.5rem;
+    }
+    .parrafo-description-h2 {
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.2; 
+    }
+    .lista1 {
+        gap: 1.5rem;   
+    }
+    .lista2 {
+        gap: 1.5rem;       
+    }
     .lista3 {
         gap: 1.5rem;   
         margin-bottom: 2.5rem;
     }
+    .parrafo-description-h2 {
+        font-size: 0.8rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.2; 
+    }
 
+
+
+
+    
+    .h1-prod .h1-productos {
+        font-size: 2.25rem;
+    }
+    .productos-info p {
+        font-size: 1rem;
+    }
+
+    .cards h3 {
+        font-size: .7rem;
+        font-weight: 400;
+        padding-bottom: 0.2rem; 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .card-info ul li {
+        font-size: 1.2rem;
+        line-height: .88; 
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 0.08rem; 
+    }
+    
+    .cards p {
+        font-size: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        line-height: .88;
+    }
+    .card-info button {
+        width: 4.25rem;
+        height: 1.5rem;
+        margin: .5rem;
+        margin-left: 1rem;
+    }
+    .fila-1 {
+        margin-right: 1.5rem ;
+    }
+    .fila-2 {
+        margin-right: 1.5rem ;
+    }
+    .cards {
+        width: 12.5rem;
+        height: 20rem;
+        border-radius: .25rem;
+        margin: 1.25rem ;
+    }
+    .cards .card-img {
+        padding: .75rem;
+    }
+    
 }
-
