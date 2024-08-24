@@ -14,39 +14,33 @@ body {
 }
 
 
-.img-inicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6.25rem;
-    background-color: black;
-}    
-.img-header {
-    height: 5rem;
-    margin-right: 1.875rem;
-    margin-left: 1.875rem;
-}
-
-.nav {
+.menu {
     display: flex;
     list-style: none;
     text-decoration: none;
     align-items: center;
     justify-content: center;
+    gap: 2.0625rem;
+    height: 7rem;
 }
 
-.nav .navbar {
+.img-header {
+    height: 5rem;
+    justify-content: start;
+}
+.menu .navbar {
     display: flex;
-    flex-wrap: wrap;
-    height: 4.375rem;  
+    height: 3.125rem;  
     gap: 2.0625rem;
     text-decoration: none;
     justify-content: center;
+    align-items: center;
     border-top: solid white .0625rem;
     border-bottom: solid white .0625rem;
-    margin-bottom: 1.875rem;
+    font-size: 1rem;
+    overflow: hidden;
 }
-.nav .navbar li a { 
+.menu .navbar li a { 
     text-decoration: none;
     color: white;
     
@@ -80,6 +74,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 2.8125rem;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 img {
@@ -348,6 +343,7 @@ form #boton-enviar:hover {
     color: #ffffff;
     font-size: 2.8125rem;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
 }
 .container-h2-tend {
     display: flex;
@@ -497,6 +493,7 @@ form #boton-enviar:hover {
     color: #ffffff;
     font-size: 2.8125rem;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
 }
 .lugar {
     font-size: 1.5625rem;
@@ -522,7 +519,6 @@ form #boton-enviar:hover {
     grid-column: 2/3;
     grid-row: 4/5;
     margin-top: 5rem;
-    line-height: 1,.3125rem;
     color: rgba(62, 62, 62, 1);
 }
 .mis-experiencias {
@@ -646,6 +642,8 @@ form #boton-enviar:hover {
     color: rgb(255, 255, 255);
     font-size: 2.8125rem;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
+
 }
 
 .parrafo-servicios {
@@ -814,6 +812,7 @@ form #boton-enviar:hover {
     color: rgb(255, 255, 255);
     font-size: 2.8125rem;
     text-decoration: underline;
+    text-shadow: 2px 2px 4px #000000;
 }
 .productos-info {
     display: flex;
@@ -970,7 +969,7 @@ button:hover {
         font-size: .875rem;
     }
     .titulo {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
     }
     .botones-contacto .turno-whatsapp button {
         width: 10.2rem;
@@ -1170,7 +1169,11 @@ button:hover {
 @media (max-width:1076px) {
     .botones-contacto img {
         content: url(../img/1200px.jpg);
-    }  
+    } 
+    .botones-contacto {
+    grid-template-rows: 2rem 6rem 6rem;
+    }
+    
     .botones-contacto img {
         grid-column: 1 / 12;
         grid-row: 1 / 7;
@@ -1178,6 +1181,263 @@ button:hover {
         height: 21.875rem;   
         object-fit: cover;
     }
+    .botones-contacto .turno-whatsapp {
+        grid-column: 10/11;
+        grid-row: 2/3;
+    }
+    .botones-contacto .turno-whatsapp button {
+        width: 10.2rem;
+        height: 3.8rem;
+        font-size: 1.1rem;
+        background-color: rgb(48, 0, 37);
+    }
+    .botones-contacto .lista-de-prescios {
+        grid-column: 10/11;
+        grid-row: 3/7;
+    }
+    .botones-contacto .lista-de-prescios button {
+        width: 10.2rem;
+        height: 3.8rem;
+        font-size: 1.1rem; 
+        background-color: rgb(48, 0, 37);
+    }
+    .botones-contacto .lugar {
+        grid-column: 10/11;
+        grid-row: 4/8;
+        
+    }    
+    .botones-contacto .lugar button {
+        width: 19.15rem;
+        height: 4.05rem;
+        font-size: 1.1rem;
+        background-color: rgb(48, 0, 37);
+    }
+}
+@media (max-width:1024px) {
+
+    body {
+        font-size: .75rem;
+    }
+.menu {
+    gap: 2.0625rem;
+    height: 5rem;
 }
 
-@media (max-width:1024px) {}
+.img-header {
+    height: 4rem;
+}
+
+.h1-index 
+    {
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+.h1-servicios {
+        height: 8rem;
+        margin-bottom: 1.5rem;
+    }
+.h1-hist {
+    height: 8rem;
+    margin-bottom: 1.5rem;
+}
+.h1-tendencia{
+    height: 8rem;
+    margin-bottom: 1.5rem;
+}
+.h1-prod{
+    height: 8rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulo {
+    font-size: 2.25rem;
+}
+
+.h2-index {
+    display: grid;
+    grid-template-columns: 1.7rem 24rem 2.59375rem 10.03125rem 0.78125rem 10.78125rem 1.7rem;
+}
+.h2-index2 {
+    display: grid;
+    grid-template-columns: 1.7rem 24rem 2.59375rem 10.03125rem 0.78125rem 10.78125rem 1.7rem;
+}
+.h2-inicio {
+    font-size: 1.25rem;
+    padding-top: 2.7rem;
+}
+
+.p1-inicio {
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+
+.h2-segundo {
+    font-size: 1.25rem;
+    padding-top: 2.7rem;
+}
+.p2-segundo {
+    font-size: .8rem;
+    line-height: 1.5;
+
+}
+.h2-tenden {
+    font-size: 1.4rem;
+}
+
+.parra p {
+
+    font-size: .875rem; 
+    line-height: 1.4;
+    padding: .875rem 0; 
+    border-radius: 0.4375rem;
+    margin-bottom: .875rem;
+}
+
+
+.parra li {
+    font-size: .875rem; 
+    line-height: 1.4; 
+    margin-bottom: .875rem; 
+    padding-left: 1.3125rem; 
+    border-radius: 0.4375rem; 
+}
+
+.parra li::before {
+    font-size: 1.05rem;
+}
+.lugar {
+    font-size: 1.367rem;
+}
+.p-ubicacion {
+    font-size: .875rem;
+    margin-top: 3rem;
+}
+.mis-inicios {
+    font-size: 1.367rem;
+}
+.p-deinicio {
+    font-size: .875rem;
+    margin-top: 3rem;
+}
+.mis-experiencias {
+    font-size: 1.367rem;
+}
+
+.p-experiencia {
+    font-size: .875rem;
+    margin-top: 3rem;
+}
+.reputacion{
+    font-size: 1.367rem;
+}
+.p-reputaciones {
+    font-size: .875rem;
+    margin-top: 3rem;
+}
+.unite {
+    font-size: 1.367rem;
+}
+.p-unase {
+    font-size: .875rem;
+    margin-top: 3rem;
+}
+.productos-info h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.4375rem;
+}
+
+.productos-info p {
+    font-size: .875rem;
+    max-width: 37.5rem;
+}
+
+.search-form {
+    height: 10.9375rem;
+    gap: 1.1640625rem;
+}
+
+#busqueda {
+    width: 16.40625rem;
+    padding: 0.546875rem;
+    font-size: .875rem;
+}
+.shop .search-form .buscar {
+    font-size: .875rem;
+    width: 5.7421875rem;
+    height: 2.3515625rem;
+    border-radius: 0.546875rem;
+}
+.ordenar-btn, .filtrar-btn { 
+    font-size: .875rem;
+    width: 5.7421875rem;
+    height: 2.3515625rem;
+    border-radius: 0.546875rem;
+}
+.productos-info{
+    padding: 1.5rem;
+}
+.search-form {
+    height: 8rem;
+}
+}
+
+@media (max-width:768px) {
+.img-inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.25rem;
+    background-color: black;
+}    
+.img-header {
+    height: 5rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    margin: .625rem;
+}
+
+.menu .navbar {
+    display: flex;
+    flex-direction: column;
+    height: 8rem;  
+    gap: .1rem;
+    text-decoration: none;
+    justify-content: center;
+    border-top: none;
+    border-bottom: none;
+    font-size: 1.5625rem;
+}
+.nav {
+    margin: .625rem 0;
+    }
+.menu .navbar li a { 
+    display: block;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(70, 179, 230);; 
+    border-radius: 5px;
+    height: 2.5rem;
+    width: 18.75rem;
+    padding: 0;
+    border: solid .125rem white;
+}
+.navbar li a:hover {
+    color: rgb(230, 185, 70);
+    border: solid .125rem rgb(230, 185, 70);;
+
+    background-color: #000000;
+    transform: scale(1.1);
+    transition: 1s;
+    }  
+}
