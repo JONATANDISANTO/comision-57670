@@ -1108,11 +1108,6 @@ button:hover {
         margin-bottom: 1.2rem;
         line-height: 1.2; 
     }
-
-
-
-
-    
     .h1-prod .h1-productos {
         font-size: 2.25rem;
     }
@@ -1380,6 +1375,116 @@ button:hover {
 .search-form {
     height: 8rem;
 }
+}
+@media (max-width:968px){
+.grid-footer {
+    display: grid;
+    grid-template-columns: .1rem 12.32rem 3.2rem 12.032rem 3.2rem 13.184rem;
+    grid-template-rows: .64rem 5.792rem 13.12rem 1.248rem;
+    justify-content: center;
+}
+    
+.redes {
+    font-size: .8rem;
+}
+.copy {
+    font-size: .56rem;
+    line-height: 1;
+    margin-top: 3.52rem;
+}
+.contactos-footer p {
+    font-size: .8rem;
+}
+.custom-hr {
+    height: .20rem;
+}
+.redes ul li {
+    display: inline-block;
+    padding: .4rem;
+}
+.redes ul li img {
+    width: 1.92rem; 
+    height: auto; 
+}
+.formulario{
+    margin-top: 1.2rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    font-size: .8rem;
+}
+form textarea {
+    height: 8.44rem;
+    border-radius: .4rem;
+    margin-bottom: .84rem;
+    font-size: .8rem;
+}
+form input {
+    width: 100%;
+    height: 1.8rem;
+    border-radius: .4rem;
+    font-size: .8rem;
+}
+footer form #boton-enviar {
+    background-color: #272727;
+    font-size: .64rem;
+    width: 2.8rem;
+    height: 1.6rem;
+    border-radius: .4rem;
+} 
+form #boton-enviar:hover {
+    background-color: #67c7ff;
+    border-radius:  .4rem;
+} 
+} 
+@media (max-width: 968px) {
+.galeria-fotos {
+    grid-template-columns: 1rem 1fr 1rem 1fr 1rem 1fr 1rem;
+    grid-template-rows: 1rem 16.38rem 1rem 16.38rem 1rem 16.38rem 1rem;
+}
+.color-zanahoria {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.balayage-colorado {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+.mujer-hombre {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.corto-desmechado {
+    grid-column: 6 / 7;
+    grid-row: 2 / 3;
+}
+.balayage-rubio {
+    grid-column: 6 / 7;
+    grid-row: 6 / 7;
+}
+.hombre-pelo-semicorto {
+    grid-column: 4 / 5;
+    grid-row: 6 / 7;
+}
+.hombre-solo {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.actriz-famosa {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+}
+.rubia-cuerpo-completo {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.hombre-espalda {
+    display: none;
+}
+
 }
 
 @media (max-width:768px) {
