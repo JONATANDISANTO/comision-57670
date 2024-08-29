@@ -152,12 +152,12 @@ img {
 .h2-inicio {
     display: flex;
     color: #ffffff;
-    font-size: 1.75rem;
+    font-size: 1.5625rem;
     grid-column: 2/2;
     grid-row: 2/3;
     text-decoration: underline;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: .7rem;
 }
 .p1-inicio {
     display: flex;
@@ -187,12 +187,12 @@ img {
     grid-row: 2/3;
     text-decoration: underline;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: .7rem;
 }
 .p2-segundo {
     display: flex;
     color: #ffffff;
-    font-size: 16px;
+    font-size: 1.125rem;
     grid-column: 2/3;
     grid-row: 2/5;
     line-height: 1.3;
