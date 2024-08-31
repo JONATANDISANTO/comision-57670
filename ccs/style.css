@@ -264,10 +264,15 @@ img {
     font-family: "Poppins", sans-serif;
     color: rgba(165, 165, 165, 1);
 }
+.contactos-footer h4 {
+    font-size: 1.25rem;
+    font-family: "Poppins", sans-serif;
+    color: rgba(165, 165, 165, 1);
+}
 
 .custom-hr {
     color: rgb(251, 255, 0);
-    height: .3125rem;
+    height: 5px;
 }
 
 .redes ul li {
@@ -1040,6 +1045,9 @@ button:hover {
     .redes {
         font-size: 1rem;
     }
+    .redes h4 {
+        font-size: 1rem;
+    }
     .copy {
         font-size: .7rem;
         
@@ -1050,7 +1058,9 @@ button:hover {
     .contactos-footer p {
         font-size: 1rem;
     }
-    
+    .contactos-footer h4 {
+        font-size: 1rem;
+    }
     .custom-hr {
         height: .25rem;
     }
@@ -1596,4 +1606,33 @@ form #boton-enviar:hover {
 
 }
 
-@media (max-width:768px)
+@media (max-width:768px) {
+    .grid-footer {
+        display: grid;
+        grid-template-columns: 3.6rem 20.6rem 3.6rem;
+        grid-template-rows: 1.95rem  7rem 1.95rem 7rem 1.95rem 18rem 1.95rem;
+        justify-content: center;
+        background-color: #1b1b1b;
+    
+    }
+
+    .redes {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .contactos-footer {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .formulario{
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+    .copy {
+        margin-top: .0625rem;
+    }
+    .contactos-footer h4 {
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+}
