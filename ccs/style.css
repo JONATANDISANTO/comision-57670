@@ -24,7 +24,6 @@ img {
     text-decoration: none;
     align-items: center;
     justify-content: space-between;
-    gap: 2.0625rem;
     padding: 0 1rem;
 }
 
@@ -657,9 +656,9 @@ form #boton-enviar:hover {
     margin-top: 3.125rem;
 }
 .parrafo-description-h2 {
-    width: 50%;
+    width: 60%;
     font-size: 1rem;
-    color: #dfcdf3;
+    color: #b8b8b8;
     margin-bottom: 1.5rem;
     line-height: 1.5; 
     text-align: justify; 
@@ -1170,11 +1169,22 @@ button:hover {
     .parrafo-servicios {
         margin-top: 2.5rem;
     }
+
     .parrafo-description-h2 {
-        font-size: 0.8rem;
-        margin-bottom: 1.2rem;
-        line-height: 1.2; 
+        font-size: .75rem;
+        margin-bottom: 1.1rem;
+        line-height: 1.5; 
     }
+    .coloracion h2 {
+        font-size: 2.5rem;
+    }
+    .belleza-capilar h2 {
+        font-size: 2.5rem;
+    }
+    .cortes-peinados h2 {
+        font-size: 2.5rem;
+    }
+
     .lista1 {
         gap: 1.5rem;   
     }
@@ -1184,11 +1194,6 @@ button:hover {
     .lista3 {
         gap: 1.5rem;   
         margin-bottom: 2.5rem;
-    }
-    .parrafo-description-h2 {
-        font-size: 0.8rem;
-        margin-bottom: 1.2rem;
-        line-height: 1.2; 
     }
     .h1-prod .h1-productos {
         font-size: 2.25rem;
@@ -1634,5 +1639,35 @@ form #boton-enviar:hover {
     .contactos-footer h4 {
         color: whitesmoke;
         font-size: 1rem;
+    }
+    .menu .navbar {
+        display: flex;
+        text-decoration: none;
+        justify-content: start;
+        align-items: center;
+        border-top: solid white .0625rem;
+        border-bottom: solid white .0625rem;
+        gap: .625rem;
+        font-size: .8125rem;
+        padding: .1875rem;
+    }
+    .menu .navbar li a { 
+        text-decoration: none;
+        color: white;
+        list-style: none;
+    }
+    .menu .navbar li {
+        list-style: none;
+    }
+    .navbar li a:hover {
+        color: rgb(230, 185, 70);
+        transform: scale(1.1);
+        transition: 1s;
+    } 
+    .img-header {
+        display: flex;
+        justify-content: start;
+        height: 3rem;
+        margin: .1875rem;
     }
 }
