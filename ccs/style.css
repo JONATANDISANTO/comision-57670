@@ -266,7 +266,7 @@ img {
 .contactos-footer h4 {
     font-size: 1.25rem;
     font-family: "Poppins", sans-serif;
-    color: rgba(165, 165, 165, 1);
+    color: rgb(172, 172, 172);
 }
 
 .custom-hr {
@@ -1001,7 +1001,7 @@ button:hover {
         font-size: .875rem;
     }
     .titulo {
-        font-size: 2.25rem;
+        font-size: 2.4rem;
     }
     .menu .navbar {
         display: flex;
@@ -1111,7 +1111,7 @@ button:hover {
         border-radius:  .5rem;
     }
     .tendencias {
-        font-size: 2.25rem;    }
+        font-size: 2.4rem;    }
 
     .main-tendencias {
         background-image: url(../img/33281.jpg);
@@ -1124,7 +1124,7 @@ button:hover {
     }
 
     .h1-historia {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .articulos-historia {
         grid-template-columns: 1.75rem 27.41rem 1.855rem 19.635rem 1.75rem;
@@ -1164,10 +1164,10 @@ button:hover {
 
     }
     .servicios {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
     }
     .parrafo-servicios {
-        margin-top: 2.5rem;
+        margin-top: 2.25rem;
     }
 
     .parrafo-description-h2 {
@@ -1193,10 +1193,10 @@ button:hover {
     }
     .lista3 {
         gap: 1.5rem;   
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.4rem;
     }
     .h1-prod .h1-productos {
-        font-size: 2.25rem;
+        font-size: 2.4rem;
     }
     .productos-info p {
         font-size: 1rem;
@@ -1618,8 +1618,9 @@ form #boton-enviar:hover {
     .h1-index p {
         width:50%;
         text-align: center;
-    }
 
+    }
+    font-size: 2.25rem;
     .botones-contacto .lugar button {
         width: 15.32rem;
         height: 3.24rem;
@@ -1748,4 +1749,236 @@ form #boton-enviar:hover {
         height: 3rem;
         margin: .1875rem;
     }
+    .tendencias {
+        font-size: 2rem;
+    }
+    .h1-historia {
+        font-size: 2rem;
+    }
+    .servicios {
+        font-size: 2rem;
+    }
+    .h1-prod .h1-productos {
+        font-size: 2rem;
+    }
+.articulos-historia {
+    grid-template-columns: 1.4875rem 30rem 1.4875rem .01rem .01rem;
+    grid-template-rows: 2rem 11rem 1.5rem 16rem 1.5rem 11rem 1.5rem 16rem 1.5rem 11rem 1.5rem 16rem 1.5rem 11rem 1.5rem 16rem 1.5rem 11rem 1.5rem 16rem 5.593rem;
+    }
+.lugar {
+    font-size: 1.3125rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: rgb(56, 56, 56);
+    text-align: center;
 }
+.p-ubicacion {
+    font-size: .9rem;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 2rem;
+    text-align: center;
+}
+.mis-inicios {
+    font-size: 1.3125rem;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    text-align: center;
+}
+.p-deinicio {
+    font-size: .9rem;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin-top: 2rem;
+    text-align: center;
+}
+.mis-experiencias {
+    font-size: 1.3125rem;
+    grid-column: 2/3;
+    grid-row: 10/11;
+    text-align: center;
+}
+.p-experiencia {
+    font-size: .9rem;
+    grid-column: 2/3;
+    grid-row: 10/11;
+    margin-top: 2rem;
+    text-align: center;
+}
+.reputacion{
+    font-size: 1.3125rem;
+    grid-column: 2/3;
+    grid-row: 14/15;
+    text-align: center;
+}
+.p-reputaciones {
+    font-size: .9rem;
+    grid-column: 2/3;
+    grid-row: 14/15;
+    margin-top: 2rem;
+    text-align: center;
+}
+.unite {
+    font-size: 1.3125rem;
+    grid-column: 2/3;
+    grid-row: 18/19;
+    text-align: center;
+}
+.p-unase {
+    font-size: .9rem;
+    grid-column: 2/3;
+    grid-row: 18/19;
+    margin-top: 2rem;
+    text-align: center;
+}
+.flex-plaza {
+    display: flex;
+    justify-content: center;
+}
+.plaza{
+    width: 70%;
+    height: 100%;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: 0 4.49rem 0 4.49rem;
+}
+        
+.peluquero-profesional {
+    width: 70%; 
+    border-radius: 4px;
+    grid-column: 2/3;
+    grid-row: 8/9;
+    margin: 0 4.49rem 0 4.49rem;
+}
+.inicios-historia {
+grid-column: 2/3;
+}
+.p-inic {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.peluquera-cuidando {
+    width: 70%;
+    border-radius: 4px;
+    grid-column: 2/3;
+    grid-row: 12/13;
+    margin: 0 4.49rem 0 4.49rem;
+}
+.experiencia {
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+        
+.peluquero-recortando {
+    width: 70%;
+    grid-column: 2/3;
+    grid-row: 16/17;
+    margin: 0 4.49rem 0 4.49rem;
+    }
+        
+.beautiful-keratin {
+    width: 70%;
+    grid-column: 2/3;
+    grid-row: 20/21;
+    margin: 0 4.49rem 0 4.49rem;
+    }
+
+    .parrafo-description-h2 {
+        width: 80%;
+        font-size: .6875rem;
+        color: #b8b8b8;
+        margin-bottom: 1.5rem;
+        line-height: 1.5;
+        text-align: justify;
+        justify-content: center;
+    }
+    .cuatro-mujeres img {
+        width: 95%;
+    }
+    .mujer-lavado img {
+        width: 95%;
+    }
+    .img-servicios3 img {
+        width: 95%;   
+    }
+    .lista1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.125rem;
+    }
+    .lista2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.125rem;
+    }
+    .lista3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.125rem;   
+    }
+    .coloracion h2 {
+        justify-content: center;
+        font-size: 2rem;
+        color: rgb(230, 185, 70);
+    
+    }
+    .belleza-capilar h2 {
+        justify-content: center;
+        font-size: 2rem;
+        color: rgb(230, 185, 70);
+    }
+    
+    .cortes-peinados h2 {
+        justify-content: center;
+        font-size: 2rem;
+        color: rgb(230, 185, 70);
+    }
+    .lista-servicios ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;
+        
+    } 
+    .lista-de-precios ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;
+    }
+    
+    .lista-servicios2 ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;
+        
+    } 
+    .lista-de-precios2 ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;
+    }
+    
+    .lista-servicios3 ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;
+        
+    } 
+    .lista-de-precios3 ul li {
+        text-decoration: none;
+        color: #ffffff;
+        list-style: none;
+        line-height: 1.3;    
+    }
+}
+
