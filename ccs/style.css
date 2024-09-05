@@ -1620,7 +1620,7 @@ form #boton-enviar:hover {
         text-align: center;
 
     }
-    font-size: 2.25rem;
+
     .botones-contacto .lugar button {
         width: 15.32rem;
         height: 3.24rem;
@@ -1929,56 +1929,11 @@ grid-column: 2/3;
     
     }
     .belleza-capilar h2 {
-        justify-content: center;
         font-size: 2rem;
-        color: rgb(230, 185, 70);
     }
-    
     .cortes-peinados h2 {
-        justify-content: center;
         font-size: 2rem;
-        color: rgb(230, 185, 70);
     }
-    .lista-servicios ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;
-        
-    } 
-    .lista-de-precios ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;
-    }
-    
-    .lista-servicios2 ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;
-        
-    } 
-    .lista-de-precios2 ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;
-    }
-    
-    .lista-servicios3 ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;
-        
-    } 
-    .lista-de-precios3 ul li {
-        text-decoration: none;
-        color: #ffffff;
-        list-style: none;
-        line-height: 1.3;    
-    }
+
 }
 
