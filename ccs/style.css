@@ -82,21 +82,20 @@ img {
 
 .botones-contacto {
     display: grid;
-    grid-template-columns: repeat (12, 7.5rem);
+    grid-template-columns: repeat(12, 1fr); 
     grid-template-rows: 3rem 6rem 6rem 3rem 6rem 3rem;
     justify-items: center;
-    gap: .625rem;    
+    gap: .625rem;
 }
 .botones-contacto img {
-    grid-column: 1 / 12;
-    grid-row: 1 / 7;
+    grid-column: 1/13;
+    grid-row: 1/7;
     width: 100%;   
     object-fit: cover;
-    
 }
     
 .botones-contacto .turno-whatsapp {
-    grid-column: 5/6;
+    grid-column: 5/7;
     grid-row: 2/3;
 }
 .botones-contacto .turno-whatsapp button {
@@ -107,7 +106,7 @@ img {
     color: #ffffff;  
 }
 .botones-contacto .lista-de-prescios {
-    grid-column: 7/8;
+    grid-column: 8/9;
     grid-row: 2/3;
 }
 .botones-contacto .lista-de-prescios button {
@@ -119,7 +118,7 @@ img {
 }
 .botones-contacto .lugar {
     display:flex;
-    grid-column: 5/8;
+    grid-column: 5/9;
     grid-row: 4/5;
     
 }    
@@ -368,7 +367,7 @@ form #boton-enviar:hover {
     font-size: 1.125rem; 
     line-height: 1.6;
     color: #f5f5f5;
-    font-family: 'Arial', sans-serif; 
+    font-family: "Poppins"; 
     padding: 1rem 0; 
     background: rgba(0, 0, 0, 0.5); 
     border-radius: 0.5rem;
@@ -385,7 +384,7 @@ form #boton-enviar:hover {
     font-size: 1rem; 
     line-height: 1.6; 
     color: #f5f5f5; 
-    font-family: 'Arial', sans-serif; 
+    font-family: "Poppins"; 
     margin-bottom: 1rem; 
     padding-left: 1.5rem; 
     text-align: left; 
@@ -1284,16 +1283,18 @@ button:hover {
 
     .botones-contacto img {
         content: url(../img/1200px.jpg);
-    } 
+            grid-column: 1/13;
+        }
+    
     .botones-contacto {
-    grid-template-rows: 2rem 6rem 6rem;
+        grid-template-rows: 3rem 4.25rem 1rem 4.25rem 1rem 4.25rem 3rem .001rem;
     }
     
     .botones-contacto img {
-        grid-column: 1 / 12;
+        grid-column: 1 / 13;
         grid-row: 1 / 7;
         width: 100%;
-        height: 21.875rem;   
+        height: 25rem;   
         object-fit: cover;
     }
     .botones-contacto .turno-whatsapp {
@@ -1301,24 +1302,24 @@ button:hover {
         grid-row: 2/3;
     }
     .botones-contacto .turno-whatsapp button {
-        width: 10.2rem;
-        height: 3.8rem;
+        width: 19.15rem;
+        height: 4.05rem;
         font-size: 1.1rem;
         background-color: rgb(48, 0, 37);
     }
     .botones-contacto .lista-de-prescios {
         grid-column: 10/11;
-        grid-row: 3/7;
+        grid-row: 4/5;
     }
     .botones-contacto .lista-de-prescios button {
-        width: 10.2rem;
-        height: 3.8rem;
+        width: 19.15rem;
+        height: 4.05rem;
         font-size: 1.1rem; 
         background-color: rgb(48, 0, 37);
     }
     .botones-contacto .lugar {
         grid-column: 10/11;
-        grid-row: 4/8;
+        grid-row: 6/7;
         
     }    
     .botones-contacto .lugar button {
@@ -1335,7 +1336,6 @@ button:hover {
     }
 .menu {
     gap: 2.0625rem;
-    height: 5rem;
 }
 
 .img-header {
@@ -1357,7 +1357,6 @@ button:hover {
 }
 .h1-tendencia{
     height: 8rem;
-    margin-bottom: 1.5rem;
 }
 .articulos-historia {
     grid-template-columns: 1.4875rem 23.2985rem 1.57675rem 16.68975rem 1.4875rem;
@@ -1503,6 +1502,36 @@ button:hover {
 
 
 @media (max-width:968px){
+    .botones-contacto {
+        grid-template-rows: 1.5rem 3.5rem 1rem 3.5rem 1rem 3.5rem 1.5rem .001rem;
+    }
+
+    .botones-contacto .turno-whatsapp button {
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+
+    
+    .botones-contacto .lista-de-prescios button {
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+    
+    .botones-contacto .lugar button {
+        width: 14rem;
+        height: 3.5rem;
+        font-size: 1rem;
+    }
+    .botones-contacto img {
+        grid-column: 1 / 13;
+        grid-row: 1 / 7;
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
+    }
+
 .grid-footer {
     display: grid;
     grid-template-columns: .1rem 12.32rem 3.2rem 12.032rem 3.2rem 13.184rem;
@@ -1611,6 +1640,7 @@ form #boton-enviar:hover {
 
 }
 
+
 @media (max-width:768px) {
 .titulo {
     font-size: 2rem;
@@ -1620,28 +1650,40 @@ form #boton-enviar:hover {
     text-align: center;
 }
 
-.botones-contacto .lugar button {
-    width: 15.32rem;
-    height: 3.24rem;
-    font-size: .9rem;
-}
-
-.botones-contacto .turno-whatsapp button {
-    width: 8.16rem;
-    height: 3.04rem;
-    font-size: .9rem;;
-}
-
-.botones-contacto .lista-de-prescios button {
-    width: 8.16rem;
-    height: 3.04rem;
-    font-size: .9rem;
-    background-color: rgb(48, 0, 37);
-}
-
 .botones-contacto img {
-    margin-bottom: -30rem;
-}
+    content: url(../img/1200px.jpg);
+        grid-column: 1/13;
+    }
+
+    .botones-contacto {
+        grid-template-rows: 1.5rem 2.8rem 1rem 2.8rem 1rem 2.8rem 1.5rem .001rem;
+    }
+
+    .botones-contacto .turno-whatsapp button {
+        width: 8rem;
+        height: 2.8rem;
+        font-size: .8rem;
+    }
+
+    
+    .botones-contacto .lista-de-prescios button {
+        width: 8rem;
+        height: 2.8rem;
+        font-size: .8rem;
+    }
+    
+    .botones-contacto .lugar button {
+        width: 11.2rem;
+        height: 2.8rem;
+        font-size: .8rem;
+    }
+    .botones-contacto img {
+        grid-column: 1 / 13;
+        grid-row: 1 / 7;
+        width: 100%;
+        height: 17.5rem;
+        object-fit: cover;
+    }
 .h2-index2 {
     display: grid;
     grid-template-columns: .01rem .01rem 1.7rem 12.9375rem 0.78125rem 12.9375rem 1.7rem;
@@ -1933,5 +1975,65 @@ grid-column: 2/3;
     width: 45rem;
     margin: .8rem;
 }
-
+.productos-info p {
+    font-size: .75rem;
 }
+.productos-info h2 {
+    font-size: 1.25rem;
+    margin-bottom: .3125rem;
+}
+.h1-tendencia {
+    height: 8rem;
+    margin-bottom: none;
+}
+}
+
+@media (max-width: 700px) {
+    .galeria-fotos {
+        grid-template-columns: 1rem 1fr 1rem 1fr 1rem .001rem .001rem;
+        grid-template-rows: 1rem 16.38rem 1rem 16.38rem 1rem 16.38rem 1rem;
+    }
+    .color-zanahoria {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .balayage-colorado {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    .mujer-hombre {
+        grid-column: 4/5;
+        grid-row: 2/3;
+        display: none;
+    }
+    .corto-desmechado {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .balayage-rubio {
+        grid-column: 4 / 5;
+        grid-row: 4/5;
+    }
+    .hombre-pelo-semicorto {
+        grid-column: 4 / 5;
+        grid-row: 6 / 7;
+    }
+    .hombre-solo {
+        grid-column: 2/3;
+        grid-row: 4/5;
+        display: none;
+    }
+    .actriz-famosa {
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+    .rubia-cuerpo-completo {
+        grid-column: 4/5;
+        grid-row: 4/5;
+        display: none;
+    }
+    .hombre-espalda {
+        display: none;
+    }
+    
+    }
