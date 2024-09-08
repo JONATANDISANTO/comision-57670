@@ -6,54 +6,78 @@
     box-sizing: border-box;
     
 }
-body {
-    line-height: 1.6; 
-    background-color: #000000;
-    font-family: "Poppins", sans-serif;
-    
-}
+
 img {
     width: auto;
     height: 100%;
     object-fit: contain;
 }
-
+body {
+    line-height: 1.6; 
+    background-color: #000000;
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF ;
+    --color2: #000000 ;
+}
+.nav-bar {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 0rem 1.25rem 0rem 1.25rem;
+}
+.logo img {
+    width: 6.875rem;
+    margin-top: .375rem;
+}
 .menu {
     display: flex;
-    list-style: none;
+}
+.menu li {
+    padding-left: 30px;
+}
+.menu li a {
+    display: inline-block;
     text-decoration: none;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
 }
-
-.img-header {
-    display: flex;
-    justify-content: start;
-    height: 4rem;
-    margin: .3125rem;
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
 }
-.menu .navbar {
-    display: flex;
-    text-decoration: none;
-    justify-content: end;
-    align-items: center;
-    border-top: solid white .0625rem;
-    border-bottom: solid white .0625rem;
-    gap: 2.0625rem;
-    font-size: 1.25rem;
-    padding: .3125rem;
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
 }
-.menu .navbar li a { 
-    text-decoration: none;
-    color: white;
-    list-style: none;
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
 }
-.navbar li a:hover {
-    color: rgb(230, 185, 70);
-    transform: scale(1.1);
-    transition: 1s;
-}  
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {display: none;
+}
 
 .h1-index 
     {
@@ -310,7 +334,7 @@ form textarea {
 }
 form input {
     width: 100%;
-    height: 2.9375rem;
+    height: 2.6875rem;
     border-radius: .625rem;
     font-size: 1.25rem;
 }
@@ -1002,17 +1026,6 @@ button:hover {
     .titulo {
         font-size: 2.4rem;
     }
-    .menu .navbar {
-        display: flex;
-        text-decoration: none;
-        justify-content: end;
-        align-items: center;
-        border-top: solid white .0625rem;
-        border-bottom: solid white .0625rem;
-        gap: 2.0625rem;
-        font-size: 1rem;
-        padding: .3125rem;
-    }
 
     .botones-contacto .turno-whatsapp button {
         width: 10.2rem;
@@ -1200,7 +1213,19 @@ button:hover {
     .productos-info p {
         font-size: 1rem;
     }
+    .shop .search-form .buscar {
+        font-size: .8rem;
+        width: 6.5625rem;
+        height: 2.35rem;
+        border-radius: .5rem;
+    }
 
+    .ordenar-btn, .filtrar-btn {
+        font-size: .8rem;
+        width: 6.5625rem;
+        height: 2.35rem;
+        border-radius: .5rem;
+    }
     .cards h3 {
         font-size: .7rem;
         font-weight: 400;
@@ -1269,17 +1294,7 @@ button:hover {
 }
 
 @media (max-width:1076px) {
-    .menu .navbar {
-        display: flex;
-        text-decoration: none;
-        justify-content: end;
-        align-items: center;
-        border-top: solid white .0625rem;
-        border-bottom: solid white .0625rem;
-        gap: 1.6875rem;
-        font-size: 1rem;
-        padding: .3125rem;
-    }
+
 
     .botones-contacto img {
         content: url(../img/1200px.jpg);
@@ -1334,13 +1349,7 @@ button:hover {
     body {
         font-size: .75rem;
     }
-.menu {
-    gap: 2.0625rem;
-}
 
-.img-header {
-    height: 4rem;
-}
 
 .h1-index 
     {
@@ -1475,29 +1484,19 @@ button:hover {
     gap: 1.1640625rem;
 }
 
-#busqueda {
-    width: 16.40625rem;
-    padding: 0.546875rem;
-    font-size: .875rem;
-}
-.shop .search-form .buscar {
-    font-size: .875rem;
-    width: 5.7421875rem;
-    height: 2.3515625rem;
-    border-radius: 0.546875rem;
-}
-.ordenar-btn, .filtrar-btn { 
-    font-size: .875rem;
-    width: 5.7421875rem;
-    height: 2.3515625rem;
-    border-radius: 0.546875rem;
-}
 .productos-info{
     padding: 1.5rem;
 }
 .search-form {
     height: 8rem;
 }
+form {
+    height: .9375rem;
+    gap: 1.6rem;
+}
+
+
+
 }
 
 
@@ -1579,9 +1578,21 @@ form textarea {
 }
 form input {
     width: 100%;
-    height: 1.8rem;
+    height: 1.9rem;
     border-radius: .4rem;
     font-size: .8rem;
+}
+.shop .search-form .buscar {
+    font-size: .875rem;
+    width: 5.7421875rem;
+    height: 1.9rem;
+    border-radius: .4375rem;
+}
+.ordenar-btn, .filtrar-btn { 
+    font-size: .875rem;
+    width: 5.7421875rem;
+    height: 1.9rem;
+    border-radius: .4375rem;
 }
 footer form #boton-enviar {
     background-color: #272727;
@@ -1637,11 +1648,12 @@ form #boton-enviar:hover {
 .hombre-espalda {
     display: none;
 }
-
 }
 
 
+
 @media (max-width:768px) {
+
 .titulo {
     font-size: 2rem;
 }
@@ -1652,38 +1664,37 @@ form #boton-enviar:hover {
 
 .botones-contacto img {
     content: url(../img/1200px.jpg);
-        grid-column: 1/13;
+    grid-column: 1/13;
+}
+
+.botones-contacto {
+    grid-template-rows: 1.5rem 2.8rem 1rem 2.8rem 1rem 2.8rem 1.5rem .001rem;
     }
 
-    .botones-contacto {
-        grid-template-rows: 1.5rem 2.8rem 1rem 2.8rem 1rem 2.8rem 1.5rem .001rem;
-    }
+.botones-contacto .turno-whatsapp button {
+    width: 8rem;
+    height: 2.8rem;
+    font-size: .8rem;
+}
 
-    .botones-contacto .turno-whatsapp button {
-        width: 8rem;
-        height: 2.8rem;
-        font-size: .8rem;
-    }
-
+.botones-contacto .lista-de-prescios button {
+    width: 8rem;
+    height: 2.8rem;
+    font-size: .8rem;
+}
     
-    .botones-contacto .lista-de-prescios button {
-        width: 8rem;
-        height: 2.8rem;
-        font-size: .8rem;
-    }
-    
-    .botones-contacto .lugar button {
-        width: 11.2rem;
-        height: 2.8rem;
-        font-size: .8rem;
-    }
-    .botones-contacto img {
-        grid-column: 1 / 13;
-        grid-row: 1 / 7;
-        width: 100%;
-        height: 17.5rem;
-        object-fit: cover;
-    }
+.botones-contacto .lugar button {
+    width: 11.2rem;
+    height: 2.8rem;
+    font-size: .8rem;
+}
+.botones-contacto img {
+    grid-column: 1 / 13;
+    grid-row: 1 / 7;
+    width: 100%;
+    height: 17.5rem;
+    object-fit: cover;
+}
 .h2-index2 {
     display: grid;
     grid-template-columns: .01rem .01rem 1.7rem 12.9375rem 0.78125rem 12.9375rem 1.7rem;
@@ -1753,37 +1764,8 @@ form #boton-enviar:hover {
 .contactos-footer h4 {
     color: rgba(165, 165, 165, 1);
     font-size: 1rem;
-}
-.menu .navbar {
-    display: flex;
-    text-decoration: none;
-    justify-content: start;
-    align-items: center;
-    border-top: solid white .0625rem;
-    border-bottom: solid white .0625rem;
-    gap: .625rem;
-    font-size: .8125rem;
-    padding: .1875rem;
-}
-.menu .navbar li a { 
-    text-decoration: none;
-    color: white;
-    list-style: none;
-}
-.menu .navbar li {
-    list-style: none;
-}
-.navbar li a:hover {
-    color: rgb(230, 185, 70);
-    transform: scale(1.1);
-    transition: 1s;
 } 
-.img-header {
-    display: flex;
-    justify-content: start;
-    height: 3rem;
-    margin: .1875rem;
-}
+
 .tendencias {
     font-size: 2rem;
 }
@@ -2037,3 +2019,24 @@ grid-column: 2/3;
     }
     
     }
+
+@media(max-width: 610px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .menu li {margin-top: 40px;}
+    .menu li a {padding: 10px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .menu {right: 0;}
+    }
+    
