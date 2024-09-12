@@ -1358,20 +1358,19 @@ button:hover {
     }
 
 
-.h1-index 
-    {
+    .h1-index {
         height: 8rem;
         margin-bottom: 1.5rem;
     }
-.h1-servicios {
+    .h1-servicios {
         height: 8rem;
         margin-bottom: 1.5rem;
     }
-.h1-hist {
+    .h1-hist {
     height: 8rem;
     margin-bottom: 1.5rem;
 }
-.h1-tendencia{
+    .h1-tendencia{
     height: 8rem;
 }
 .articulos-historia {
@@ -2162,22 +2161,26 @@ grid-column: 2/3;
     }
 }    
 @media (max-width: 450px){
-    .h2-inicio {
-        font-size: 1rem;
-        padding-top: 2.16rem;
-        align-items: center;
-    }
     .h2-index {
-        grid-template-columns: .01rem .01rem 3.234375rem 19.40625rem 3.234375rem .001rem  .001rem;
-        grid-template-rows: 1.7rem 5rem 1rem .001rem 1.7rem 17.6625rem 1rem 17.6625rem 1.7rem;
+        grid-template-columns: .01rem .01rem 2rem 15.525rem 2rem .001rem  .001rem;
+        grid-template-rows: 1.7rem 8.5rem 1rem .001rem 2.5rem 14.13rem 1rem 14.13rem 1.7rem;
         margin-top: 1.875rem;
         margin-bottom: .0625rem;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: .625rem;
     }
-    .p1-inicio {
-        font-size: .6875rem;
+    .h2-inicio {
+        font-size: 1rem;
+        align-items: end;
+        }
+    
+    .p2-segundo {
+        font-size: .8rem;
         line-height: 1.2;
-        text-align: center;
-        grid-row: 2 / 3;
+        text-align: center;            
+        grid-column: 2/6;
+        grid-row: 2/3;
     }
     .rubia {
         display: none;
@@ -2185,8 +2188,7 @@ grid-column: 2/3;
     .trigueña {
         grid-column: 4 / 5;
         grid-row: 6/ 7;
-
-    }
+}
     .blanco-negro {
         grid-column: 4 / 5;
         grid-row: 8 / 9;
@@ -2194,28 +2196,25 @@ grid-column: 2/3;
         height: 100%; 
         object-fit: fill;
     }
-        .h2-index2 {
-            grid-template-columns: .01rem .01rem 2rem 15.525rem 2rem .001rem  .001rem;
-            grid-template-rows: 1.7rem 5rem 1rem .001rem 2.5rem 14.13rem 1rem 14.13rem 1.7rem;
-            margin-top: 1.875rem;
-            margin-bottom: .0625rem;
-            justify-content: center;
-            margin-right: 0;
-            margin-left: .625rem;
-        }
-        .p2-segundo {
-            font-size: .6875rem;
-            line-height: 1.2;
-            text-align: center;
-            grid-row: 2 / 3;
-        }
-        
-        .h2-segundo {
-            font-size: 1rem;
-            align-items: end;
-        }
-        .span-p {
-            display: none;
-        }
+    .h2-index2 {
+        grid-template-columns: .01rem .01rem 2rem 15.525rem 2rem .001rem  .001rem;
+        grid-template-rows: 1.7rem 8.5rem 1rem .001rem 2.5rem 14.13rem 1rem 14.13rem 1.7rem;
+        margin-top: 1.875rem;
+        margin-bottom: .0625rem;
+        justify-content: center;
+        margin-right: 0;
+        margin-left: .625rem;
     }
-
+    .p2-segundo {
+        font-size: .8rem;
+        line-height: 1.2;
+        text-align: center;            
+        grid-column: 2/6;
+        grid-row: 2/3;
+    }
+    
+    .h2-segundo {
+        font-size: 1rem;
+        align-items: end;
+    }
+}
