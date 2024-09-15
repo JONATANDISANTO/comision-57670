@@ -1035,7 +1035,18 @@ button:hover {
     .titulo {
         font-size: 2.4rem;
     }
-
+    .h1-prod .h1-productos {
+        font-size: 2.4rem;
+    }
+    .h1-historia {
+        font-size: 2.4rem;
+    }
+    .tendencias {
+        font-size: 2.4rem;    
+    }
+    .servicios {
+        font-size: 2.4rem;
+    }
     .botones-contacto .turno-whatsapp button {
         width: 10.2rem;
         height: 3.8rem;
@@ -1131,8 +1142,6 @@ button:hover {
         background-color: #67c7ff;
         border-radius:  .5rem;
     }
-    .tendencias {
-        font-size: 2.4rem;    }
 
     .main-tendencias {
         background-image: url(../img/33281.jpg);
@@ -1142,10 +1151,6 @@ button:hover {
         grid-template-columns: 1.6rem 13.055rem 1.61rem 13.055rem 1.61rem 13.055rem 1.61rem 13.055rem 1.6rem;
         grid-template-rows: 1.6rem 16.38rem 1.61rem 16.38rem 1.61rem 16.38rem 1.6rem;
         margin-bottom: 2.5rem;
-    }
-
-    .h1-historia {
-        font-size: 2.4rem;
     }
     .articulos-historia {
         grid-template-columns: 1.75rem 27.41rem 1.855rem 19.635rem 1.75rem;
@@ -1184,9 +1189,7 @@ button:hover {
         margin-top: 3rem;
 
     }
-    .servicios {
-        font-size: 2.4rem;
-    }
+
     .parrafo-servicios {
         margin-top: 2.25rem;
     }
@@ -1215,9 +1218,6 @@ button:hover {
     .lista3 {
         gap: 1.5rem;   
         margin-bottom: 2.4rem;
-    }
-    .h1-prod .h1-productos {
-        font-size: 2.4rem;
     }
     .productos-info p {
         font-size: 1rem;
